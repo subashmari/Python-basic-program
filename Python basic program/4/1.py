@@ -1,0 +1,8 @@
+str=input("Enter the data into a file : ")
+f1=open('subash.txt','w')
+f1.write(str)
+f1.close()
+f2=open('subash.txt','r')
+data=f2.read()
+print(data)
+f2.close()

@@ -1,0 +1,12 @@
+f = open("subash 6", 'r+')
+n = int(input("Enter the first n number to reverse in a file: "))
+s = f.read(n)
+print(s)
+f.seek(0, 0)
+f.write(s[n-1::-1])
+f.close()
+
+f = open("subash 6", 'r')
+f.seek(0, 0)
+print(f.read())
+f.close()
